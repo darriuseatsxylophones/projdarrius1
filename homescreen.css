@@ -1,0 +1,66 @@
+html {
+    background-color: goldenrod;
+}
+
+h1 {
+    margin-top: 30px;
+    background-color:blanchedalmond;
+    font-family:'Times New Roman';
+    color: rgb(244, 214, 137);
+    text-align:center;
+    font-size:180px;
+    text-shadow: 5px 5px gold;
+    text-decoration: dotted;
+    margin-left: 20px;
+    margin-right:20px;
+    box-shadow:6px 6px rgb(141, 108, 48);
+    margin-bottom:20px;
+}
+
+img {
+    width:200px;
+}
+
+p {
+    color:rgb(255, 214, 160);
+    text-align:center;
+    font-size:35px;
+}
+
+div.buttonchoices {
+    text-align: center;
+}
+div.front {
+    background-color: rgb(164, 93, 7);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+button {
+    align-items: center;
+    cursor:pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+    width: 200px;
+    height:60px;
+    font-size:30px;
+    color:bisque;
+    background-color: rgb(221, 138, 14);
+    text-shadow:3px 3px rgb(197, 132, 34);
+    outline-color: rgb(57, 31, 0);
+    margin-right:50px;
+    margin: auto;
+    left: 50%;
+}
+
+input {
+    height:60px;
+}
+button:hover {
+    background-color: rgb(233, 195, 119);
+}
+
+p.Introduction {
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:0px;
+}
