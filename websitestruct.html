@@ -6,42 +6,52 @@
     </head>
     <body>
         <div class="topofpage">
-
-        <h1 class="storename">Welcome to Cool Store!</h1>
-        <p>New Promotions - up to 60% off</p>
-
-        <div class = "buttons">
-            <button>Beauty</button>
-            <button>Electronics</button>
-            <button>Clothing</button>
-            <button>Toys</button>
-            <button>Fitness</button>
-            <button>Home Decor</button>
-            <button>Jewelry</button>
-            <button>Pet Products</button>
-            <button>Books and Education</button>
-            <button>Outdoor</button>
-            <script src="websitestruct.js"></script>
-        </div>
-
+            <h1 class="storename">Welcome to Cool Store!</h1>
+            <p>New Promotions - up to 60% off</p>
+            <div class="buttons">
+                <button onclick="filterCategory('Beauty')">Beauty</button>
+                <button onclick="filterCategory('Electronics')">Electronics</button>
+                <button onclick="filterCategory('Clothing')">Clothing</button>
+                <button onclick="filterCategory('Toys')">Toys</button>
+                <button onclick="filterCategory('Fitness')">Fitness</button>
+                <button onclick="filterCategory('Home Decor')">Home Decor</button>
+                <button onclick="filterCategory('Jewelry')">Jewelry</button>
+                <button onclick="filterCategory('Pet Products')">Pet Products</button>
+                <button onclick="filterCategory('Books and Education')">Books and Education</button>
+                <button onclick="filterCategory('Outdoor')">Outdoor</button>
+            </div>
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button class="Search" type="button">Search</button>
+            <input type="text" id="search-input" placeholder="Search...">
+            <button class="Search" type="button" onclick="searchProducts()">Search</button>
         </div>
-
-        <div class="content-box">
-            <h2>Trending Products</h2>
-            <image src="air-jordan-1-mid-shoes-86f1ZW.png">
-            <image src="nike.jpeg"></image>
-            <image src="pods.jpeg"></image>
-            <image src="11pro.jpg"></image>
+        <h2>Trending Products</h2>
+        <div class="content-box" id="product-list">
+            <div class="product" data-category="Clothing">
+                <img src="images/air-jordan-1-mid-shoes-86f1ZW.png" alt="Air Jordan 1 Mid Shoes">
+                <p class="textword">Nice Shoes - $199</p>
+            </div>
+            <div class="product" data-category="Clothing">
+                <img src="images/nike.jpeg" alt="Nike Shoes">
+                <p class="textword">More Shoes - $139</p>
+            </div>
+            <div class="product" data-category="Electronics">
+                <img src="images/pods.jpeg" alt="Airpods">
+                <p class="textword">Airpods - $77</p>  
+            </div>
+            <div class="product" data-category="Electronics">
+                <img src="images/11pro.jpg" alt="iPhone 11 Pro">
+                <p class="textword">Expensive Phone - $885</p>
+            </div>
+            <div class="product" data-category="Beauty">
+                <img src="images/beauty.jpg" alt="Makeup">
+                <p class="textword">Makeup Products - $25</p>
+            </div>
         </div>
-
-
         <footer>
             <p>&copy; 2024 Cool Store. All rights reserved.</p>
             <a href="credits.html">About and other info</a>
         </footer>
+        <script src="websitestruct.js"></script>
     </body>
 </html>
